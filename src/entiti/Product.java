@@ -23,6 +23,10 @@ public class Product {
 		this.price = price;
 	}
 	
+	public static void staticPriceUpdate(Product p) {
+		p.setPrice(p.getPrice() * 1.1);
+	}
+	
 	@Override
 	public String toString() {
 		return "Name: " + getName() + ", " + String.format("Price: R$ %.2f ", getPrice() );
